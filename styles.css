@@ -1,0 +1,307 @@
+/* =========================================
+   1. Global Styles (สไตล์ทั่วไปทั้งเว็บ)
+   ========================================= */
+body {
+    font-family: 'Sarabun', sans-serif; /* แนะนำให้ไปหา Font Google มาใส่ */
+    background-color: #000000; /* สีพื้นหลังเว็บ */
+    color: #333; /* สีตัวหนังสือทั่วไป */
+}
+
+a {
+    text-decoration: none; /* เอาขีดเส้นใต้ลิงก์ออก */
+}
+
+/* =========================================
+   2. Navbar (แถบเมนู)
+   ========================================= */
+.custom-navbar {
+    background-color: #6a0000 !important; /* สีพื้นหลังเมนู */
+    border-bottom: 1px solid #1a0000; /* เส้นขอบล่างบางๆ */
+}
+
+.brand-logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #ffffff !important;
+    /* letter-spacing: 2px;  ลองเปิดบรรทัดนี้ดู ถ้าอยากให้ตัวหนังสือห่างๆ */
+}
+
+.nav-menu-item {
+    font-weight: 500;
+    color: #ffffff !important;
+    transition: color 0.3s; /* เอฟเฟกต์ตอนเปลี่ยนสี */
+}
+
+.nav-menu-item:hover {
+    color: #ff4c4c9d !important; /* สีตอนเอาเมาส์ชี้เมนู */
+}
+
+.custom-btn-dark {
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px; /* ความมนของปุ่ม */
+    padding: 0.5rem 1.5rem;
+}
+
+/* =========================================
+   3. Hero Section (ส่วนหัวข้อใหญ่)
+   ========================================= */
+.hero-section {
+    /* background-color: #fff; */
+}
+
+.hero-title {
+    font-family: 'Times New Roman', serif; /* ฟอนต์แบบมีหัวให้ดูคลาสสิก */
+    color: #ffffff;
+    /* text-transform: uppercase; ตัวพิมพ์ใหญ่หมด */
+}
+
+.hero-desc {
+    color: #a1a1a1;
+    font-size: 1.2rem;
+}
+
+.hero-img {
+    border-radius: 15px; /* รูปมุมมน */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* เงารูปภาพ */
+}
+
+.custom-btn-primary {
+    background-color: #000;
+    border: 2px solid #ffffff;
+    transition: all 0.3s;
+}
+
+.custom-btn-primary:hover {
+    background-color: #ffffff;
+    color: #000;
+}
+
+/* =========================================
+   4. Features Section (คุณสมบัติ)
+   ========================================= */
+.features-section {
+    background-color: #4f0000; /* เปลี่ยนสีพื้นหลังส่วนนี้ได้ */
+}
+
+.feature-box {
+    padding: 2rem;
+    transition: transform 0.3s;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px); /* ขยับขึ้นเล็กน้อยตอนชี้ */
+}
+
+.feature-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #000000;
+}
+
+.feature-desc {
+    color: #777;
+    font-size: 0.95rem;
+}
+
+/* =========================================
+   5. Products Section (สินค้า)
+   ========================================= */
+.products-section {
+    /* padding-top: 50px; */
+}
+
+.section-title {
+    font-weight: 800;
+    color: #ffffff;
+}
+.new-title1 {
+    font-weight: 800;
+    color: #000000;
+}
+.new-title2 {
+    font-weight: 800;
+    color: #000000;
+}
+.section-title1 {
+    font-weight: 800;
+    color: #ffffff;
+}
+
+
+/* การ์ดสินค้า */
+.product-card {
+    border: none; /* เอาเส้นขอบออก */
+    transition: all 0.3s ease;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden; /* ตัดรูปส่วนเกิน */
+}
+
+.product-card:hover {
+    transform: translateY(-10px); /* ลอยขึ้น */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important; /* เงาเข้มขึ้น */
+}
+
+.product-img {
+    height: 300px; /* บังคับความสูงรูปให้เท่ากัน */
+    object-fit: cover; /* จัดรูปให้เต็มกรอบไม่เบี้ยว */
+}
+
+.product-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.product-price {
+    font-size: 1.2rem;
+}
+
+.custom-btn-view {
+    border-radius: 50px; /* ปุ่มรี */
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+/* =========================================
+   6. Testimonials (รีวิวลูกค้า)
+   ========================================= */
+.testimonial-card {
+    padding: 3rem;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    margin: 1rem;
+}
+
+.customer-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #eee;
+}
+
+.customer-quote {
+    font-style: italic; /* ตัวเอียง */
+    color: #555;
+}
+
+/* =========================================
+   7. About Page (หน้าเกี่ยวกับเรา)
+   ========================================= */
+.story-title {
+    font-weight: bold;
+}
+
+.story-text-white * {
+    color: #ffffff !important;
+}
+
+.story-text-white .text-primary {
+    color: #ab0000 !important;
+}
+
+.story-subtitle {
+    color: #ffffff; /* สีน้ำเงิน Bootstrap หรือเปลี่ยนเป็นโค้ดสีอื่น */
+}
+
+.story-img {
+    border-radius: 20px;
+}
+
+.team-card {
+    border: none;
+    transition: 0.3s;
+}
+
+.team-card:hover {
+    background-color: #aa0000; /* เปลี่ยนสีพื้นหลังการ์ดทีมตอนชี้ */
+}
+
+.member-img {
+    filter: grayscale(100%); /* ทำให้รูปทีมงานเป็นขาวดำ (เท่ๆ) */
+    transition: 0.3s;
+}
+
+.team-card:hover .member-img {
+    filter: grayscale(0%); /* พอชี้แล้วกลับมาเป็นสี */
+}
+
+.member-name {
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.member-role {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* =========================================
+   8. Footer (ส่วนท้าย)
+   ========================================= */
+.main-footer {
+    background-color: #111 !important; /* ดำสนิท */
+}
+
+.footer-title {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.social-link {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.social-link:hover {
+    opacity: 1; /* สว่างขึ้นตอนชี้ */
+    transform: scale(1.2); /* ขยายใหญ่ขึ้นนิดนึง */
+}
+/* Features Section Dark Mode */
+.features-dark {
+    background-color: #4a0000; /* พื้นหลังดำ */
+    border: 2px solid #8d0000; /* กรอบสีขาว (ปรับเป็นดำ/ขาวได้) */
+    border-radius: 15px;
+}
+
+.features-dark .new-title1,
+.features-dark .section-subtitle,
+.features-dark .feature-title,
+.features-dark .feature-desc {
+    color: #ffffff !important; /* ตัวหนังสือสีขาวทั้งหมด */
+}
+
+.features-dark .feature-box {
+    border: 1px solid #6f0000; /* กรอบโปร่งบางๆ ของแต่ละกล่อง */
+    padding: 2rem;
+    border-radius: 10px;
+}
+/* ================================
+   Testimonials Dark Mode
+   ================================ */
+.testimonials-dark {
+    background-color: #000000; /* สีพื้นหลัง section */
+}
+
+.testimonials-dark .testimonial-card {
+    background-color: rgb(72, 0, 0); /* พื้นหลังการ์ดแบบโปร่งหรูๆ */
+    border: 2px solid #ffffff33; /* กรอบขาวจาง */
+    border-radius: 15px;
+    padding: 3rem;
+    color: #ffffff;
+}
+
+.testimonials-dark .customer-name,
+.testimonials-dark .customer-quote,
+.testimonials-dark .new-title2 {
+    color: #ffffff !important; /* ข้อความสีขาวทั้งหมด */
+}
+
+.testimonials-dark .carousel-control-prev-icon,
+.testimonials-dark .carousel-control-next-icon {
+    filter: invert(1); /* เปลี่ยนไอคอนลูกศรให้เป็นสีขาว */
+}
+
